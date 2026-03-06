@@ -1,0 +1,18 @@
+fun processList(numbers: List<Int>, check: (Int) -> Boolean): List<Int> {
+    val goodOnes = mutableListOf<Int>()
+    
+    for (number in numbers) {
+        if (check(number)) {          // if the rule says "yes"
+            goodOnes.add(number)      // keep it
+        }
+    }
+    
+    return goodOnes
+}
+
+// Example use:
+fun main() {
+    val numbers = listOf(1, 2, 3, 4, 5, 6)
+    val onlyEven = processList(numbers) { it % 2 == 0 }
+    println(onlyEven)   // prints: [2, 4, 6]
+}
