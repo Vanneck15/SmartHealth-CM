@@ -1,0 +1,28 @@
+data class Person(val name: String, val age: Int)
+
+fun main() {
+    val people = listOf(
+        Person("Alice", 25),
+        Person("Bob", 30),
+        Person("Charlie", 35),
+        Person("Anna", 22),
+        Person("Ben", 28)
+    )
+
+    var sum = 0
+    var count = 0
+
+    for (person in people) {
+        val firstLetter = person.name.first().uppercaseChar()
+        if (firstLetter == 'A' || firstLetter == 'B') {
+            sum += person.age
+            count++
+        }
+    }
+
+    val average = sum.toDouble() / count
+    println("Average age: ${average.format(1)}")   // 26.3
+}
+
+// Small helper to show 1 decimal
+fun Double.format(digits: Int) = "%.${digits}f".format(this)

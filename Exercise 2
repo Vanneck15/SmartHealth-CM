@@ -1,0 +1,13 @@
+fun main() {
+    val words = listOf("apple", "cat", "banana", "dog", "elephant")
+
+    // Make a map: word → length
+    val wordLengths = words.associateWith { it.length }
+
+    // Show only long words
+    for ((word, length) in wordLengths) {
+        if (length > 4) {
+            println("$word has length $length")
+        }
+    }
+}
