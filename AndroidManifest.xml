@@ -1,20 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.gradecalculator">
+    package="com.smarthealth.cm">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:label="Grade Calculator"
-        android:supportsRtl="true">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="Grade Calculator"
-            android:theme="@android:style/Theme.Material.Light.NoActionBar">
+        android:label="SmartHealth CM"
+        android:theme="@style/Theme.SmartHealthCM">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY_HERE" />
+
+        <activity android:name=".ui.WelcomeActivity"
+            android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity android:name=".ui.MapsActivity"
+            android:exported="false" />
+        <activity android:name=".ui.DashboardActivity"
+            android:exported="false" />
+        <activity android:name=".ui.SignupActivity"
+            android:exported="false" />
+        <activity android:name=".ui.LoginActivity"
+            android:exported="false" />
+        <activity android:name=".ui.AppointmentActivity"
+            android:exported="false" />
+        <activity android:name=".ui.RecordsActivity"
+            android:exported="false" />
+        <activity android:name=".ui.RemindersActivity"
+            android:exported="false" />
+
+        <receiver android:name=".receiver.ReminderReceiver"
+            android:exported="false" />
+
     </application>
 </manifest>
