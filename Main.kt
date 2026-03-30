@@ -1,0 +1,1 @@
+// Ce fichier est vide pour éviter les conflits de redéclaration avec MainActivity.kt
