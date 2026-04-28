@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SmartHealth CM</string>
+    <string name="hello_user">Hello, User!</string>
+    <string name="stay_healthy">Stay healthy and fit</string>
+    <string name="search_doctors">Search doctors...</string>
+    <string name="categories">Categories</string>
+    <string name="general">General</string>
+    <string name="dental">Dental</string>
+    <string name="cardio">Cardio</string>
+    <string name="eye_care">Eye Care</string>
+    <string name="our_services">Our Services</string>
+    <string name="hospitals">Hospitals</string>
+    <string name="appointments">Appointments</string>
+    <string name="records">Records</string>
+    <string name="reminders">Reminders</string>
+    <string name="emergency">Emergency</string>
+    <string name="call_911">Call 911 for help</string>
+    <string name="call_now">Call Now</string>
+
+    <string name="desc_profile_pic">Profile Picture</string>
+    <string name="desc_search_icon">Search Icon</string>
+    <string name="desc_emergency_icon">Emergency Icon</string>
+    <string name="desc_back">Back</string>
+    <string name="my_profile">My Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="security_biometrics">Security &amp; Biometrics</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="actions">Actions</string>
+    <string name="logout">Logout</string>
+</resources>

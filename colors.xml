@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_green">#10B981</color>
+    <color name="primary_dark">#059669</color>
+    <color name="accent_green">#34D399</color>
+    <color name="health_blue">#0EA5E9</color> <!-- Care Blue -->
+    <color name="health_red">#EF4444</color> <!-- Life Red (Emergency/Health) -->
+    <color name="bg_white">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="text_black">#111827</color>
+    <color name="text_gray">#6B7280</color>
+    <color name="input_bg">#F9FAFB</color>
+    <color name="border_gray">#E5E7EB</color>
+    <color name="google_red">#EA4335</color>
+    <color name="facebook_blue">#1877F2</color>
+</resources>
