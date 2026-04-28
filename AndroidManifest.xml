@@ -40,6 +40,8 @@
             android:exported="false" />
         <activity android:name=".ui.RemindersActivity"
             android:exported="false" />
+        <activity android:name=".ui.ProfileActivity"
+            android:exported="false" />
 
         <receiver android:name=".receiver.ReminderReceiver"
             android:exported="false" />
